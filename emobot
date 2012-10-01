@@ -8,10 +8,10 @@ class Emotive::UserScore {
     has %user_scores;
     has $emotion = Text::Emotion::Scorer.new;
     has %ignore; #= ('') X=> 1;
-    has %admin = <Ulti Ultima Ultali> X=> 1;
+    has %admin = <Admin> X=> 1;
 
     method log ($event) {
-        my $log = open "/home/matt/emolog", :a or $event.msg("Couldn't open the log sorry!");
+        my $log = open "~/emolog", :a or $event.msg("Couldn't open the log sorry!");
         if $log {
             #Timestamp this log
             $log.say(now);

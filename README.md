@@ -14,15 +14,20 @@ AFINN is a list of English words rated for valence with an integer between minus
 Example Use
 ===========
 
- #Create a Scorer object and all of the sentiment data is loaded for your use
- use Text::Emotion::Scorer;
- my $emotion = Text::Emotion::Scorer.new;
+```perl
+#!/usr/bin/env perl6
+use v6;
 
- #Score a whole passage of positive sounding text
- say $emotion.score("I really love Perl6. Hurrah!");
+#Create a Scorer object and all of the sentiment data is loaded for your use
+use Text::Emotion::Scorer;
+my $emotion = Text::Emotion::Scorer.new;
 
- #Score a whole passage of negative sounding text
- say $emotion.score("I hate Monday's they suck!");
+#Score a whole passage of positive sounding text
+say $emotion.score("I really love Perl6. Hurrah!");
 
- #Just get the word scores the passage score is working with
- say $emotion.score_word("failure");
+#Score a whole passage of negative sounding text
+say $emotion.score("I hate Monday's they suck!");
+
+#Just get the word scores the passage score is working with
+say $emotion.score_word("failure");
+```

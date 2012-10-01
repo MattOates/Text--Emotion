@@ -14,6 +14,8 @@ AFINN is a list of English words rated for valence with an integer between minus
 Example Use
 ===========
 
+'emobot' included is an example IRC bot using Text::Emotion::Scorer and Net::IRC::Bot.
+
 ```perl
 #!/usr/bin/env perl6
 use v6;

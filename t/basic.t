@@ -4,7 +4,7 @@ use v6;
 require Test;
 use Text::Emotion::Scorer;
 
-plan 1;
+plan(1);
 
 {
     my $scorer = Text::Emotion::Scorer.new;

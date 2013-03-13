@@ -10,5 +10,4 @@ plan 1;
 use Text::Emotion::Scorer;
 
 my $scorer = Text::Emotion::Scorer.new;
-
-isa_ok($scorer,'Text::Emotion::Scorer');
+isa_ok($scorer,Text::Emotion::Scorer);

@@ -3,7 +3,6 @@
 use v6;
 package Text::Emotion {
 
-
 class Text::Emotion::Scorer {
 
     has %dictionary = split /<[,;]>/, $=pod[0].content[0].content[0];

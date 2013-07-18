@@ -169,15 +169,13 @@ class Emotive::UserScore {
 sub MAIN(:$server="irc.freenode.net",:$channel="#bot",:$nick="emobot",Bool :$debug=False) {
     my $stuff = Text::Emotion::Scorer.new();
     Net::IRC::Bot.new(
+	    nick       => $nick,
     	server     => $server,
     	channels   => $channel,
-	    nick       => $nick,
-        altnicks   => $nick Z~ ("_","__",^10),
-        username   => 'emobot',
-    	modules    => (
-            Emotive::UserScore.new()
-    	),
-    	debug      => $debug,
+        #altnicks   => $nick Z~ ("_","__",^10),
+        #username   => 'emobot',
+    	modules    => (Emotive::UserScore.new()),
+    	debug      => $debug
     ).run;
 }
 

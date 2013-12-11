@@ -6,7 +6,7 @@
     "depends" : [ ],
     "source-type" : "git",
     "source-url" : "git://github.com/MattOates/Text--Emotion.git",
-     "provides" : {
+    "provides" : {
         "Text::Emotion::Scorer" : "lib/Text/Emotion/Scorer.pm"
     }
 }

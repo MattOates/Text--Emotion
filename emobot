@@ -8,7 +8,7 @@ class Emotive::UserScore {
     has %user_scores;
     has $emotion = Text::Emotion::Scorer.new;
     has %ignore; #= ('') X=> 1;
-    has %admin = <Ulti> X=> 1;
+    has %admin = <AdminUser> X=> 1;
 
     method log ($event) {
         my $log = open "emobot.log", :a or $event.msg("Couldn't open the log sorry!");
@@ -166,7 +166,7 @@ class Emotive::UserScore {
     }
 }
 
-sub MAIN(:$server="irc.freenode.net",:$port=6667,:$channel="#bioinformatics",:$nick="emobot",Bool :$debug=False) {
+sub MAIN(:$server="localhost",:$port=6667,:$channel="#bot",:$nick="emobot",Bool :$debug=False) {
     my $stuff = Text::Emotion::Scorer.new();
     Net::IRC::Bot.new(
 	    nick       => $nick,

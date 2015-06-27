@@ -6,7 +6,7 @@ use Text::Emotion::Scorer;
 
 {
     my $scorer = Text::Emotion::Scorer.new;
-    isa_ok $scorer, Text::Emotion::Scorer;
+    isa-ok $scorer, Text::Emotion::Scorer;
 }
 
 done;

@@ -1,4 +1,4 @@
-Text::Emotion
+Text::Emotion [![Build Status](https://travis-ci.org/MattOates/Text--Emotion.svg?branch=master)](https://travis-ci.org/MattOates/Text--Emotion)
 =============
 
 Perl6 package for scoring the emotional content of a piece of text from its word use.

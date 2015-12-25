@@ -7,7 +7,7 @@ Sentiment Data
 ==============
 
 Currently the AFINN data set from Twitter usage is used to give base word scores for sentiment.
-http://fnielsen.posterous.com/afinn-a-new-word-list-for-sentiment-analysis
+https://github.com/fnielsen/afinn
 
 AFINN is a list of English words rated for valence with an integer between minus five (negative) and plus five (positive). The words have been manually labeled by Finn Årup Nielsen in 2009-2011. The file is tab-separated.
 
